@@ -1,5 +1,5 @@
 CXX_x64 := x86_64-w64-mingw32-g++
-CC_x64 := x86_64-w64-mingw32-gcc
+CC_x64 := x86_64-w64-mingw32-gcc -Wno-return-mismatch -Wno-incompatible-pointer-types -Wno-implicit-function-declaration
 
 all: bof standalone
 
